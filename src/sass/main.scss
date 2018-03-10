@@ -1,0 +1,105 @@
+// General and bootstrap overrides
+
+html, body {
+    color: #4d4d4d;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-size: 2rem;
+}
+
+.oi.oi-basket {
+    font-size: .7em;
+}
+
+.card p {
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.product-panel {
+    background: #17a2b8;
+}
+
+.basket-items {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.btn-increment {
+    line-height: 1;
+    padding: 3px 6px;
+    padding-top: 0;
+    font-weight: bold;
+}
+
+// Dropdown
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.dropdown-item--error {
+    white-space: normal;
+    padding: 0 6px;
+}
+
+.currency-list {
+    max-height: 200px;
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+.basket-total {
+    color: #184674;
+    font-weight: bold;
+}
+
+.btn-increment {
+    display: inline-block;
+}
+
+.basket-qty {
+    font-size: 80%; 
+}
+
+.basket-total {
+    font-size: 1.3em;
+}
+
+// Steps
+
+.reveal-step {
+    opacity: 0;  
+    transition: all .4s .2s ease-in;
+    &.show { 
+        opacity: 1;  
+    }
+}
+
+// Basket buttons 
+
+.your-basket_buttons { 
+    opacity: 0; 
+    transition: all .4s .2s ease-in;
+    &.show {
+        opacity: 1;
+    }
+    &.hide{
+        pointer-events: none;
+        opacity: 0;
+    }
+}
+
+.view_thank-you {
+
+    .increment-btns {
+        display: none;
+    }
+
+}
