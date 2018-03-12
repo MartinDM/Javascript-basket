@@ -23,6 +23,8 @@ Then run `gulp` to start the build and local server at localhost:3000
 
 ![Screenshot](https://i.imgur.com/fiPUoaE.jpg)
 
+<img src="https://i.imgur.com/9GpdMBw.jpg" width="600">
+
 ## Decisions
 
 The use of Bootstrap is by no means a default for production; just used for demo purposes here. Normally adept at using a grid system (or CSS Grid) with custom SASS partials for components of the UI.
