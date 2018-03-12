@@ -1,6 +1,6 @@
 # JavaScript Shopping Basket project
 
-Built using a module pattern. This enables us to organise the code, encapsulate methods, provide an API, and keep variables out of global scope.
+A just-for-fun learning app - Built using a module JS pattern. Encapsulates basket methods, provides an API.
 
 ## Running the app
 
@@ -20,6 +20,8 @@ Then run `gulp` to start the build and local server at localhost:3000
 - Build step transpiles ES6 with Babel, compiles SASS and watches all files
 - Native JavaScript has been used wherever possible, with little reliance on jQuery apart from Bootstraps' drop-down component
 - Responsive layout using Bootstrap
+
+![Screenshot](https://i.imgur.com/9GpdMBw.jpg)
 
 
 ## Decisions
