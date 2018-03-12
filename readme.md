@@ -21,8 +21,7 @@ Then run `gulp` to start the build and local server at localhost:3000
 - Native JavaScript has been used wherever possible, with little reliance on jQuery apart from Bootstraps' drop-down component
 - Responsive layout using Bootstrap
 
-![Screenshot](https://i.imgur.com/9GpdMBw.jpg)
-
+![Screenshot](https://i.imgur.com/fiPUoaE.jpg)
 
 ## Decisions
 
