@@ -1,5 +1,8 @@
 # JavaScript Shopping Basket project
 
+
+<img src="https://i.imgur.com/9GpdMBw.jpg" width="850">
+
 A just-for-fun learning app - Built using a module JS pattern. Encapsulates basket methods, provides an API.
 
 ## Running the app
@@ -20,10 +23,7 @@ Then run `gulp` to start the build and local server at localhost:3000
 - Build step transpiles ES6 with Babel, compiles SASS and watches all files
 - Native JavaScript has been used wherever possible, with little reliance on jQuery apart from Bootstraps' drop-down component
 - Responsive layout using Bootstrap
-
-![Screenshot](https://i.imgur.com/fiPUoaE.jpg)
-
-<img src="https://i.imgur.com/9GpdMBw.jpg" width="600">
+ 
 
 ## Decisions
 
