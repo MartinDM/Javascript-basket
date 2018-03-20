@@ -2,6 +2,8 @@
 
 Built using a module JS pattern. Encapsulates basket methods, provides an API.
 
+![Screenshot](https://i.imgur.com/fiPUoaE.jpg "JavaScript basket")
+
 ## Running the app
 
 The index file in `/dist` can be run on its own, or by `cd`ing into the root directory and running `npm i`.  
