@@ -1,10 +1,6 @@
 # JavaScript Shopping Basket project
 
-
-A just-for-fun learning app - Built using a module JS pattern. Encapsulates basket methods, provides an API.
-
-
-<img src="https://i.imgur.com/9GpdMBw.jpg" width="700">
+Built using a module JS pattern. Encapsulates basket methods, provides an API.
 
 ## Running the app
 
