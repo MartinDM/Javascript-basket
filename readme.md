@@ -2,7 +2,7 @@
 
 Built using a module JS pattern. Encapsulates basket methods, provides an API.
 
-![Screenshot](https://i.imgur.com/fiPUoaE.jpg "JavaScript basket")
+![Screenshot](https://i.imgur.com/fiPUoaE.jpg){:class="img-responsive"}
 
 ## Running the app
 
