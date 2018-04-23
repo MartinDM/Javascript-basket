@@ -22,11 +22,10 @@ Then run `gulp` to start the build and local server at localhost:3000
 - Clear basket, or 'Checkout' to total and currency selection
 - Live list of currencies from Currency Layer
 - Useful error message in drop-down if Ajax fails/returns fail state
-- Basket contents persist and carried to second view
-- Uses a Module pattern, with some features of ES6 such as arrow functions, `let` and `const` and Tempate Literals
+- Basket contents persist and carried to second confirmation view
+- Uses a Module pattern
 - Build step transpiles ES6 with Babel, compiles SASS and watches all files
-- Native JavaScript has been used wherever possible, with little reliance on jQuery apart from Bootstraps' drop-down component
-- Responsive layout using Bootstrap
+- Native JavaScript has been used wherever possible, with little reliance on jQuery apart from Bootstraps' optional drop-down component
  
 
 ## Decisions
