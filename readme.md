@@ -3,7 +3,7 @@
 
 Built using a module JS pattern. Encapsulates basket methods, provides an API.
 
-Demo at [martindm.github.io/js-basket](https://martindm.github.io/js-basket)
+Demo at [martindm.github.io/js-basket](https://martindm.github.io/js-basket/index.html)
 
 ![Screenshot](https://i.imgur.com/fiPUoaE.jpg) 
 <!-- 
