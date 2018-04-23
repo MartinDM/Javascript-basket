@@ -42,6 +42,9 @@ html, body {
 
 .dropdown-item {
     cursor: pointer;
+    .text-muted {
+        pointer-events: none;
+    }
 }
 
 .dropdown-item--error {

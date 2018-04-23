@@ -70,13 +70,12 @@ var shop = (() => {
                 url: 'http://apilayer.net/api/live?access_key=' + access_key,   
                 dataType: 'jsonp',
                 success: (json) => { 
-                    if(json.success){ 
-                        console.log(json.quotes) 
+                    if(json.success){  
                         for( let key in json.quotes ) { 
                             //Get the currency abbreviation from the key name
                             let abbr = key.split('USD')[1];
                             let USDAgainstGBP = json.quotes['USDGBP'];
-                            let rate = Number( json.quotes[key].toFixed(2) / USDAgainstGBP  )
+                            let rate = Number( (json.quotes[key] / USDAgainstGBP).toFixed(2)  )
                             
                             currencies.push( { abbr, rate } )
                             currencyTpl += 

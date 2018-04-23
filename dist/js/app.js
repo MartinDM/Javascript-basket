@@ -65,12 +65,11 @@ var shop = function () {
             dataType: 'jsonp',
             success: function success(json) {
                 if (json.success) {
-                    console.log(json.quotes);
                     for (var key in json.quotes) {
                         //Get the currency abbreviation from the key name
                         var abbr = key.split('USD')[1];
                         var USDAgainstGBP = json.quotes['USDGBP'];
-                        var rate = Number(json.quotes[key].toFixed(2) / USDAgainstGBP);
+                        var rate = Number((json.quotes[key] / USDAgainstGBP).toFixed(2));
 
                         currencies.push({ abbr: abbr, rate: rate });
                         currencyTpl += '<li class="dropdown-item" data-type="currency" data-name="' + abbr + '" data-rate="' + rate + '"> \n                                ' + abbr + ' - <span class="text-muted"><small>' + rate + '</small></span>\n                            </li>';
