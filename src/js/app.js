@@ -63,23 +63,21 @@ var shop = (() => {
         <p>In the meantime, try a manual conversion at <a href="http://xe.com/">Xe.com</a> while we fix it.
         </li>`;
         
-        // Populate dropdown with available currencies
-        // set endpoint and our access key
-            //const url = 'http://apilayer.net/api/live?access_key=0f0cd603e88461f93914c25ac233252a&format=1';  
-            const endpoint = 'live';
-            const access_key = '0f0cd603e88461f93914c25ac233252a';
-    
-            // get the most recent exchange rates via the "live" endpoint.
-            // Using popular jQuery Ajax call for ease of integration and as recommended in API docs.
+            // Populate dropdown with available currencies from APILayer.net
+            const access_key = '0f0cd603e88461f93914c25ac233252a';  
+            // Using popular jQuery Ajax call for ease of integration and as recommended in API's docs.
             $.ajax({
-                url: 'http://apilayer.net/api/' + endpoint + '?access_key=' + access_key,   
+                url: 'http://apilayer.net/api/live?access_key=' + access_key,   
                 dataType: 'jsonp',
                 success: (json) => { 
                     if(json.success){ 
+                        console.log(json.quotes) 
                         for( let key in json.quotes ) { 
                             //Get the currency abbreviation from the key name
                             let abbr = key.split('USD')[1];
-                            let rate = Number( json.quotes[key].toFixed(2) ) 
+                            let USDAgainstGBP = json.quotes['USDGBP'];
+                            let rate = Number( json.quotes[key].toFixed(2) / USDAgainstGBP  )
+                            
                             currencies.push( { abbr, rate } )
                             currencyTpl += 
                             `<li class="dropdown-item" data-type="currency" data-name="${abbr}" data-rate="${rate}"> 
@@ -96,7 +94,7 @@ var shop = (() => {
                     // Helpful message in dropdown if no currencies can be retrieved
                     currencyDropdown.innerHTML = currencyTplErr; 
                 }
-            }); 
+            });  
     };
 
     // Populate the UL element with the items
